@@ -247,9 +247,9 @@ body {
 }
 .feature-list {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 30px;
-    list-style: none;
+    /* list-style: none; */
 }
 .feature-item {
     flex-basis: calc((100% - 90px) / 4);
@@ -273,6 +273,10 @@ body {
 }
 
 /*напрямки*/
+
+.section-work {
+    padding-top: 0;
+}
 .work-list {   
     display: flex;
     justify-content: space-between;
@@ -344,6 +348,10 @@ body {
     font-style: normal;
 
     list-style: none;
+}
+
+.contact:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .link {
