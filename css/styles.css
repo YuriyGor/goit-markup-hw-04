@@ -181,7 +181,7 @@ body {
 }
 .icon-envelope {
     margin-right: 10px;
-    fill: currentColor;
+    /* fill: currentColor; */
 }
 .icon-envelope:hover,
 .icon-envelope:focus {
