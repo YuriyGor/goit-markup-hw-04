@@ -181,7 +181,7 @@ body {
 }
 .icon-envelope {
     margin-right: 10px;
-    /* fill: currentColor; */
+    fill: currentColor;
 }
 .icon-envelope:hover,
 .icon-envelope:focus {
@@ -200,11 +200,25 @@ body {
 
 /*герой*/
 .hero {
-    background-color: var(--hero-footer-background-color--);
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    background-color: var(--hero-gradient--);
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/baner-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    padding: 200px 0;
 }
+
 .hero-title {
     font-family: Roboto;
     font-style: normal;
@@ -220,6 +234,7 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+
 .hero-button {
     background-color: var(--accent-color--);
     color: var(--white-color--);
@@ -270,7 +285,14 @@ body {
     display: flex;
     /* justify-content: space-between; */
     gap: 30px;
-    /* list-style: none; */
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: var(--secondary-background-color--);
 }
 .feature-item {
     flex-basis: calc((100% - 90px) / 4);
@@ -360,6 +382,44 @@ body {
 
     fill: var(--icons-color-main--);
     background-color: var(--white-color--);
+}
+
+/* постійні клієнти */
+
+.company-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.company-item {
+    width: 170px;
+    height: 92px;
+}
+
+.company-item:not(:last-child) {
+    margin-right: 30px;
+} 
+
+.icon-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    fill: var(--icons-color-main--);
+    border: 1px solid var(--icons-color-main--);
+    border-radius: 4px;
+}
+
+.icon-company:hover,
+.icon-company:focus {
+    fill: var(--accent-color--);
+    border-color: var(--accent-color--);
 }
 
 /*футер*/
