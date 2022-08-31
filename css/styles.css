@@ -372,6 +372,10 @@ body {
     justify-content: center;
     gap: 10px;
 }
+.social-item {
+    width: 44px;
+    height: 44px;
+}
 
 .icon-networks {
     display: flex;
