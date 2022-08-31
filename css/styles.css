@@ -333,7 +333,6 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    list-style: none;
 }
 .team-cards {
     background-color: var(--white-color--);
@@ -342,12 +341,13 @@ body {
     border-radius: 0px 0px 4px 4px;
     flex-basis: calc((100% - 90px) / 4);
 }
-.team-img {
+.team-content {
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 .team-name {
     color: var(--secondary-text-color--);
-
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19; 
@@ -355,21 +355,22 @@ body {
     letter-spacing: 0.03em;
     margin-bottom: 10px; 
 }
-.team-list .position {
+.position {
     color: var(--primary-text-color--);
 
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em; 
     text-align: center; 
-    padding-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .social-list {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 10px;
 }
 
 .icon-networks {
@@ -383,6 +384,23 @@ body {
     fill: var(--icons-color-main--);
     background-color: var(--white-color--);
 }
+.team-logo-social {
+    fill: var(--icons-color-main--);
+}
+.icon-networks:hover,
+.icon-networks:focus {
+    background-color: var(--accent-color--);
+}
+.icon-networks:hover .team-logo-social,
+.icon-networks:focus .team-logo-socia {
+    fill: var(--secondary-background-color--);
+}
+.team-logo-social {
+    width: 20px;
+    height: 20px;
+    fill: var(--icons-color-main--);
+}
+
 
 /* постійні клієнти */
 
